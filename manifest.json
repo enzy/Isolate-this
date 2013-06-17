@@ -2,8 +2,8 @@
   "name": "Isolate THIS",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "Isolates selected element in window",
-  "homepage_url": "http://extensionizr.com",
+  "description": "Crops a browser window to contain only selected element",
+  "homepage_url": "http://www.matejsimek.cz",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -18,16 +18,9 @@
   },
   "browser_action": {
     "default_icon": "icons/icon19.png",
-    "default_title": "browser action demo"
+    "default_title": "Isolate an element"
   },
-  "content_scripts": [
-    {
-      "matches": [
-        "*"
-      ],
-      "js": [
-        "src/inject/inject.js"
-      ]
-    }
+  "permissions": [
+    "tabs", "https://*/*", "http://*/*"
   ]
 }
